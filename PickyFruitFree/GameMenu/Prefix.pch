@@ -1,0 +1,272 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+static inline CGSize
+__CGSizeMultiply(CGSize size, float factor)
+{
+    return CGSizeMake(size.width * factor, size.height * factor);
+}
+#define CGSizeMultiply __CGSizeMultiply
+
+// font names constants
+#define kMarkerFelt @"Marker Felt"
+#define kStringBack @"Back"
+
+// string constants
+// begin: sprite frames files
+#define kFramesFilePlayMenu @"PlayMenu.plist"
+#define kFramesFileCreditsMenu @"CreditsMenu.plist"
+#define kFramesFileAchievements @"Achievements32.plist"
+#define kFramesFileLevelPassedFailed @"LevelPassedFailed.plist"
+#define kFramesFileDarkBackground @"DarkBackground.plist"
+
+#define kFramesFileFruit32 @"Fruit32.plist"
+#define kFramesFileSplash32 @"Splash32.plist"
+#define kFramesFileStarScore64 @"StarScore64.plist"
+
+#define kFramesFileGameMenuGroupButtons @"GameMenuGroupButtons.plist"
+#define kFramesFileGameMenuLevelButtons @"GameMenuLevelButtons.plist"
+#define kFramesFileUIImages @"UIImages.plist"
+
+#define kFramesFileFruitExploding @"FruitExploding.plist"
+#define kFramesFileFruitRottening @"FruitRottening2.plist"
+// end: sprite frames files
+
+//#define kSpriteFrameButtonLevelStarOverlay @"ButtonStarOverlay"
+#define kSpriteFrameNameBackground @"MainBackground"
+#define kSpriteFrameNameLevelFailed @"LevelFailed"
+#define kSpriteFrameNameReplay @"Replay"
+#define kSpriteFrameNameMainMenu @"MainMenu"
+#define kSpriteFrameNameNext @"Next"
+#define kSpriteFrameNameAwesome @"Awesome"
+#define kSpriteFrameNameGreat @"Great"
+#define kSpriteFrameNameGoodEnough @"GoodEnough"
+#define kSpriteFrameNameImprovedScoreRound @"ImprovedScoreRound"
+#define kSpriteFrameNameFruitGoalUnderlay @"FruitGoalUnderlay"
+
+#define kSpriteFrameNameUIReplay @"UILayerReplay"
+#define kSpriteFrameNameUILevelSelect @"UILayerPause" 
+
+#define kSpriteFrameNameAppleRed @"AppleRed-32"
+#define kSpriteFrameNameAppleGreen @"AppleGreen-32"
+#define kSpriteFrameNameBanana @"Banana-32"
+#define kSpriteFrameNameAppleGolden @"AppleGolden-32"
+
+#define kSpriteFrameNameAchieveAppleGolden1 @"AppleGoldenAchieve1"
+#define kSpriteFrameNameAchieveAppleGolden3 @"AppleGoldenAchieve3"
+#define kSpriteFrameNameAchieveAppleGolden7 @"AppleGoldenAchieve7"
+#define kSpriteFrameNameAchieveAppleGolden10 @"AppleGoldenAchieve10"
+
+#define kSpriteFrameNameAchieveLevel18 @"AchievePickyFruitPassedLevel18"
+#define kSpriteFrameNameAchieveLevel33 @"AchievePickyFruitPassedLevel33"
+#define kSpriteFrameNameAchieveAppleGreen10 @"AppleGreenAchieve10"
+#define kSpriteFrameNameAchieveAppleRed10 @"AppleRedAchieve10"
+#define kSpriteFrameNameAchieveBananas10 @"BananaAchieve10"
+
+//#define kSpriteFrameNameAchievePlayed100Times @"Played100TimesAchieve10"
+//#define kSpriteFrameNameAchievePlayed200Times @"Played200TimesAchieve10"
+
+
+// string formats
+#define kStringFormatInt @"%d"
+#define kStringFormatString @"%@"
+#define kStringFormatAnimationFrameName @"%@%i"
+//#define kStringFormatFruitPoolKey @"%d_%@_%d"
+#define kStringFormatFruitCloneKey @"%d_%@_%d"
+#define kStringFormatButtonPressedImageName @"%@-pressed"
+#define kStringFormatButtonDisabledImageName @"%@-disabled"
+#define kStringFormatGroupLabel @"Group %i"
+#define kStringFormatTimeLabel @"%.1f"
+#define kStringFormatTotalScore @"Total Score %d"
+#define kStringFormatTotalStars @"Total Stars %d"
+#define kStringFormatTimesPlayed @"Times Played %d"
+
+#define kImageFormatPng @"png"
+#define kImageFormatPvrCcz @"pvr.ccz"
+
+#define kImageForStarInLevelPassedLayer @"StarScore-64"
+#define kImageForStarDisabledInLevelPassedLayer @"StarScore-64-disabled"
+
+// bmp font file names
+// used in Group Levels menu scroll, Menu Play, Level Loading Scene:
+#define kBmpFontAll32 @"MarkerFeltB32All.fnt" 
+
+//#define kBmpFontAll32SkyBlue @"MarkerFeltB32AllSkyBlue.fnt"
+// used to display goal numbers in LevelPassedLayer:
+#define kBmpFontDigits16 @"MarkerFeltB16Digits.fnt" 
+
+// used to display level number in Levels menu grid:
+#define kBmpFontDigits32SkyBlue @"MarkerFeltB32DigitsSkyBlue.fnt" 
+
+// used in the UI layer to display the TIme, the remaining bonus etc
+#define kBmpFontUI16 @"MarkerFeltB16UI.fnt" 
+#define kBmpFontDigits10 @"MarkerFeltB10Digits.fnt"
+
+// used in the Level Passed Score layer:
+#define kBmpFontLevelPassedScore32 @"MarkerFeltB32LevelPassedScore.fnt"
+
+
+// Game Center IDs
+#define kLeaderBoardPickyFruitScore @"LeaderBoardPickyFruitScore"
+#define kLeaderBoardPickyFruitStars @"LeaderBoardPickyFruitStars"
+
+#define kAchievePickyFruitPlayed100Times @"PickyFruitPlayed100Times"
+#define kAchievePickyFruitPlayed200Times @"PickyFruitPlayed200Times"
+
+#define kAchievePickyFruit10GreenApples @"AchievePickyFruit10GreenApples"
+#define kAchievePickyFruit10RedApples @"AchievePickyFruit10RedApples"
+#define kAchievePickyFruit10Bananas @"AchievePickyFruit10Bananas"
+
+#define kAchievePickyFruit1GoldenApple @"AchievePickyFruit1GoldenApple"
+#define kAchievePickyFruit3GoldenApple @"AchievePickyFruit3GoldenApple"
+#define kAchievePickyFruit7GoldenApple @"AchievePickyFruit7GoldenApple"
+#define kAchievePickyFruit10GoldenApple @"AchievePickyFruit10GoldenApple"
+
+#define kAchievePickyFruitPassedLevel18 @"AchievePickyFruitPassedLevel18"
+#define kAchievePickyFruitPassedLevel33 @"AchievePickyFruitPassedLevel33"
+
+// user defaults
+#define kUserDefaultsKeyMusicOn @"music_on"
+#define kUserDefaultsKeySoundsOn @"sounds_on"
+
+// sounds names
+// IMPORTANT: If you add here, then also add in AppDelegate to preload the effect
+#define kSoundEfxSpinner @"EfxCounter.caf"
+#define kSoundEfxCounter @"EfxCounter2.caf"
+#define kSoundEfxFruitFalling @"EfxFall.caf"
+#define kSoundEfxFruitSmash @"FruitSmash.caf"
+#define kSoundEfxBugSquish @"EfxSquish6.caf"
+#define kSoundEfxLevelFailed @"EfxFailed2.caf" // @"EfxLevelFailed2.mp3" @"EfxLevelFailed3.mp3"
+//#define kSoundEfxLevelPassed @"EfxPassed2.caf"
+#define kSoundEfxImprovedScore @"EfxPassed2.caf"
+
+
+// numbers as strings
+#define kString0 @"0"
+#define kString100 @"100"
+
+// numbers
+#define kTagUIMenu 2111
+#define kTagUILayer 19311
+
+#define kActorTagParticleRain 39111
+#define kActorTagFruit 49111
+#define kActorTagTruck 59111
+#define kActorTagTractor 59112
+
+#define kActorTagHorizCart 59113
+
+#define kTruckImpulseXMultiplier 5
+
+#define kDelayToIncreaseSavedFruits 0.1f
+#define kDelayToDecreaseSavedFruits 0.1f
+#define kDelayToIncreaseDestroyedFruits 0.2f
+
+#define kStarScoreBase 1000
+#define kTimeScoreBase 3000
+#define kTimeScoreDecrementerPerSecond 100
+#define kBonusUnitPoints 10
+
+// floats for division done through multiplcation of inverse
+#define kZeroPointFiveInverted  2.0f    // 1 / 0.5
+#define kOnePointFiveInverted  0.666666666666667f    // 1 / 1.5
+#define kTwoInverted           0.5f
+#define kThreeInverted         0.333333333333333f
+#define kFourInverted          0.25f
+#define kFiveInverted          0.2f
+#define kTenInverted           0.1f
+#define kTwentyInverted        0.05f
+#define kThirtyInverted        0.033333333333333f
+#define kFortyInverted         0.025f
+#define kFiftyInverted         0.02f
+#define kOneHundredInverted    0.01f
+
+#define kInt0      0
+#define kInt1      1
+#define kInt2      2
+#define kInt3      3
+#define kInt4      4
+#define kInt5      5
+#define kInt6      6
+#define kInt7      7
+#define kInt8      8
+#define kInt9      9
+#define kInt10      10
+#define kInt12      12
+#define kInt16      16
+#define kInt100    100
+#define kInt101    101
+#define kInt200    200
+#define kInt255    255
+#define kInt1000    1000
+#define kInt2000    2000
+
+#define kFloat0          0.0f
+#define kFloat1Over60    0.016666666666667f
+#define kFloat1Over40    0.025f
+#define kFloat1Over30    0.033333333333333f
+
+#define kFloat0Point02    0.025f
+#define kFloat0Point025    0.025f
+#define kFloat0Point04    0.04f
+#define kFloat0Point05    0.05f
+#define kFloat0Point1    0.1f
+#define kFloat0Point2    0.2f
+#define kFloat0Point25   0.25f
+#define kFloat0Point4    0.5f
+#define kFloat0Point5    0.5f
+#define kFloat0Point6    0.6f
+#define kFloat0Point7    0.7f
+#define kFloat0Point75   0.75f
+#define kFloat0Point8    0.8f
+#define kFloat0Point9    0.9f
+#define kFloat1          1.0f
+#define kFloat1Point1    1.1f
+#define kFloat1Point2    1.2f
+#define kFloat1Point25    1.25f
+#define kFloat1Point5    1.5f
+#define kFloat1Point6    1.6f
+#define kFloat1Point75    1.75f
+#define kFloat1Point9    1.9f
+#define kFloat2          2.0f
+#define kFloat2Point5    2.5f
+#define kFloat3          3.0f
+#define kFloat3Point5    3.5f
+#define kFloat4          4.0f
+#define kFloat4Point5    4.5f
+#define kFloat5          5.0f
+
+#define kDeviceFrameRate    60.0f
+
+// point constants
+#define cgzero ccp(0.0f, 0.0f)
+#define cgonezero ccp(1.0f, 0.0f)
+#define cgzeroone ccp(0.0f, 1.0f)
+#define cgoneone ccp(1.0f, 1.0f)
+#define cgcenter ccp(0.5f, 0.5f)
+#define cgcenterone ccp(0.5f, 1.0f)
+#define cgcenterzero ccp(0.5f, 0.0f)
+#define cgonecenter ccp(1.0f, 0.0f)
+#define cgzerocenter ccp(0.0f, 0.5f)
+
+// colors
+#define kColorBlueForGoalNumbers ccc3(0,125,255)
+
+#define kColorGroupButtonHighlight ccc3(176, 128, 128)
+#define kColorLevelButtonHighlight ccc3(176, 128, 128)
+#define kBackgroundGradientStart ccc4(0, 10, 60, 255)
+#define kBackgroundGradientEnd ccc4(0, 80, 170, 255)
+
+#endif

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>1</integer>
+		<key>ptm_ratio</key>
+		<real>32</real>
+	</dict>
+	<key>bodies</key>
+	<dict>
+		<key>Trailer</key>
+		<dict>
+			<key>anchorpoint</key>
+			<string>{ 0.0000,0.0000 }</string>
+			<key>fixtures</key>
+			<array>
+				<dict>
+					<key>density</key>
+					<integer>5</integer>
+					<key>friction</key>
+					<real>0</real>
+					<key>restitution</key>
+					<real>0</real>
+					<key>filter_categoryBits</key>
+					<integer>1</integer>
+					<key>filter_groupIndex</key>
+					<integer>0</integer>
+					<key>filter_maskBits</key>
+					<integer>65535</integer>
+					<key>fixture_type</key>
+					<string>POLYGON</string>
+					<key>isSensor</key>
+					<false/>
+					<key>polygons</key>
+					<array>
+						<array>
+							<string>{ 72.113,38.942 }</string>
+							<string>{ 71.932,12.887 }</string>
+							<string>{ 88.500,2.639 }</string>
+							<string>{ 88.552,45.598 }</string>
+						</array>
+						<array>
+							<string>{ 88.500,2.639 }</string>
+							<string>{ 71.932,12.887 }</string>
+							<string>{ 50.000,8.500 }</string>
+							<string>{ 55.639,2.861 }</string>
+						</array>
+						<array>
+							<string>{ 11.000,35.939 }</string>
+							<string>{ -0.220,44.388 }</string>
+							<string>{ 0.000,2.500 }</string>
+							<string>{ 11.139,13.026 }</string>
+						</array>
+						<array>
+							<string>{ 0.000,2.500 }</string>
+							<string>{ 26.000,2.500 }</string>
+							<string>{ 30.000,7.500 }</string>
+							<string>{ 11.139,13.026 }</string>
+						</array>
+						<array>
+							<string>{ 30.000,7.500 }</string>
+							<string>{ 40.000,11.500 }</string>
+							<string>{ 11.139,13.026 }</string>
+						</array>
+						<array>
+							<string>{ 50.000,8.500 }</string>
+							<string>{ 71.932,12.887 }</string>
+							<string>{ 40.000,11.500 }</string>
+						</array>
+						<array>
+							<string>{ 71.932,12.887 }</string>
+							<string>{ 11.139,13.026 }</string>
+							<string>{ 40.000,11.500 }</string>
+						</array>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

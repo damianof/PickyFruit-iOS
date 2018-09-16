@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>StarScore-64</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1,1},{121,128}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>sourceSize</key>
+			<string>{121,128}</string>
+		</dict>
+		<key>StarScore-64-disabled</key>
+		<dict>
+			<key>frame</key>
+			<string>{{123,1},{121,128}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>sourceSize</key>
+			<string>{121,128}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>1</integer>
+		<key>size</key>
+		<string>{256,256}</string>
+		<key>textureFileName</key>
+		<string>StarScore64-hd.pvr.ccz</string>
+	</dict>
+</dict>
+</plist>

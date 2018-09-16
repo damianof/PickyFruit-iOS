@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!-- created with http://www.physicseditor.de -->
+
+<plist version="1.0">
+	<dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>ptm_ratio</key>
+            <real>64</real>
+        </dict>
+        <key>bodies</key>
+		<dict>
+
+			<key>Tractor</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>5</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ 262.500,25.000 }</string>
+	
+								<string>{ 260.500,69.000 }</string>
+	
+								<string>{ 243.000,101.500 }</string>
+	
+								<string>{ 178.000,139.500 }</string>
+	
+								<string>{ 118.500,167.000 }</string>
+	
+								<string>{ 56.000,143.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 0.500,95.000 }</string>
+	
+								<string>{ 1.000,32.500 }</string>
+	
+								<string>{ 28.000,71.500 }</string>
+	
+								<string>{ 56.000,143.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 122.000,26.500 }</string>
+	
+								<string>{ 190.000,26.500 }</string>
+	
+								<string>{ 226.000,45.500 }</string>
+	
+								<string>{ 115.500,55.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 226.000,45.500 }</string>
+	
+								<string>{ 56.000,143.000 }</string>
+	
+								<string>{ 92.000,78.500 }</string>
+	
+								<string>{ 115.500,55.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 14.000,31.000 }</string>
+	
+								<string>{ 28.000,71.500 }</string>
+	
+								<string>{ 1.000,32.500 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 28.000,71.500 }</string>
+	
+								<string>{ 55.000,83.500 }</string>
+	
+								<string>{ 56.000,143.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 55.000,83.500 }</string>
+	
+								<string>{ 92.000,78.500 }</string>
+	
+								<string>{ 56.000,143.000 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+		</dict>
+	</dict>
+</plist>
+

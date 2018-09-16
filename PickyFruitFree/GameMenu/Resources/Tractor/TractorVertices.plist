@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>1</integer>
+		<key>ptm_ratio</key>
+		<real>32</real>
+	</dict>
+	<key>bodies</key>
+	<dict>
+		<key>Tractor</key>
+		<dict>
+			<key>anchorpoint</key>
+			<string>{ 0.0000,0.0000 }</string>
+			<key>fixtures</key>
+			<array>
+				<dict>
+					<key>density</key>
+					<integer>5</integer>
+					<key>friction</key>
+					<real>0</real>
+					<key>restitution</key>
+					<real>0</real>
+					<key>filter_categoryBits</key>
+					<integer>1</integer>
+					<key>filter_groupIndex</key>
+					<integer>0</integer>
+					<key>filter_maskBits</key>
+					<integer>65535</integer>
+					<key>fixture_type</key>
+					<string>POLYGON</string>
+					<key>isSensor</key>
+					<false/>
+					<key>polygons</key>
+					<array>
+						<array>
+							<string>{ 132.000,13.404 }</string>
+							<string>{ 130.000,40.851 }</string>
+							<string>{ 118.447,54.479 }</string>
+							<string>{ 113.794,23.876 }</string>
+						</array>
+						<array>
+							<string>{ 63.335,13.041 }</string>
+							<string>{ 94.500,13.500 }</string>
+							<string>{ 113.794,23.876 }</string>
+							<string>{ 118.447,54.479 }</string>
+							<string>{ 81.160,79.064 }</string>
+							<string>{ 52.119,38.844 }</string>
+						</array>
+						<array>
+							<string>{ 0.192,1.862 }</string>
+							<string>{ 20.121,38.946 }</string>
+							<string>{ 22.877,71.702 }</string>
+							<string>{ 0.000,45.711 }</string>
+						</array>
+						<array>
+							<string>{ 20.121,38.946 }</string>
+							<string>{ 52.119,38.844 }</string>
+							<string>{ 81.160,79.064 }</string>
+							<string>{ 22.877,71.702 }</string>
+						</array>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

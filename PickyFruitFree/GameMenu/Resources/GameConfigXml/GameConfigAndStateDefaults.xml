@@ -1,0 +1,486 @@
+<GameState>
+    <GameMenuConfig NumberOfGroups="2" LevelsPerGroup="9" LevelsPerRow="3"/>
+    <Achievements>
+        <Achievement Name="AchievePickyFruit10GreenApples" Value="0"/>
+        <Achievement Name="AchievePickyFruit10RedApples" Value="0"/>
+        <Achievement Name="AchievePickyFruit10Bananas" Value="0"/>
+        <Achievement Name="AchievePickyFruit1GoldenApple" Value="0"/>
+        <Achievement Name="AchievePickyFruit3GoldenApple" Value="0"/>
+        <Achievement Name="AchievePickyFruit7GoldenApple" Value="0"/>
+        <Achievement Name="AchievePickyFruit10GoldenApple" Value="0"/>
+    </Achievements>
+    <Groups>
+        <Group Number="1" Active="1" Label="1-9" ReqScoreToEnable="0" ReqStarsToEnable="0" GameLayer="TargetLayerGameLayer1" SkyRegion="{{0,30.5},{60.125,9.5}}" UnitsFromEdge="0" UnitsYOffset="5" TimeBeforeHail="600" NumberOfTrailers="1">
+            <Images UIBackground="UIBackgroundMed"/>
+            <Parallax Active="true" FramesFileName="Parallax1.plist" ImageFormat="pvr.ccz" TextureImage="Parallax1.pvr.ccz">
+                <Sprite Tag="100" Z="-1300" FrameName="Clouds" SpeedFactor="0.1" AnchorPoint="{0,1}" Position="{0,0}" PositionFromTop="true"/>
+                <Sprite Tag="101" Z="-1200" FrameName="Mountains" SpeedFactor="0.3" AnchorPoint="{0,1}" Position="{0,16}" PositionFromTop="true"/>
+                <Sprite Tag="102" Z="-1100" FrameName="Hills" SpeedFactor="0.6" AnchorPoint="{0,0}" Position="{0,-1.5}" PositionFromTop="false"/>
+            </Parallax>
+            <EnemySystem FramesFileName="BugAnimation.plist" ImageFormat="pvr.ccz" Active="true" EmissionDelay="15" EmissionRate="1" EmissionInterval="2.0" EmissionStopAfter="6" EnemySpeed="1.0" PositionXVariation="2.0" PositionYVariation="2.5">
+                <Actors>
+                    <Actor Desc="BugAnimation" Type="BugAnimationNode" Tag="7778" Z="105" FramesFileName="" ImageFormat="" VerticesFile="" FrameName="BugAnimation0" AnchorPoint="{0.5,0.5}" Position="{2,20}" PositionFromTop="false" CollisionType="CollisionTypeEnemy" MakeDynamic="false">
+                        <CollidesWith Value="CollisionTypeFruit"/>
+                        <MaskBits Value="CollisionTypeALL"/>
+                        <MaskBits Value="~CollisionTypeWorldLeft"/>
+                        <MaskBits Value="~CollisionTypeWorldRight"/>
+                        <MaskBits Value="~CollisionTypeTruck"/>
+                        <MaskBits Value="~CollisionTypeTruckDriver"/>
+                    </Actor>
+                </Actors>
+            </EnemySystem>
+            <TreeSystem Active="true" Speed="1.5" FramesFileName="Trees1_4.plist" ImageFormat="pvr.ccz" TextureImage="Trees1_4.pvr.ccz">
+                <Tree Tag="1" Z="10" AnchorPoint="{0,0}" FrameName="Tree1" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+						<Actor Desc="AppleGreen" Type="FruitNode" Tag="1111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="AppleGreen-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="FlowerRed" Type="FruitNode" Tag="2111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="FlowerRed-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Banana" Type="FruitNode" Tag="3111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Banana-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+                <Tree Tag="2" Z="11" AnchorPoint="{0,0}" FrameName="Tree2" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="GrapeGreen" Type="FruitNode" Tag="4111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="GrapeGreen-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Kiwi" Type="FruitNode" Tag="5111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Kiwi-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Melon" Type="FruitNode" Tag="6111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Melon-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+                <Tree Tag="3" Z="12" AnchorPoint="{0,0}" FrameName="Tree3" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="Raspberry" Type="FruitNode" Tag="7111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Raspberry-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Strawberry" Type="FruitNode" Tag="8111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Strawberry-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="OrangeHalf" Type="FruitNode" Tag="9111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="OrangeHalf-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+                <Tree Tag="4" Z="13" AnchorPoint="{0,0}" FrameName="Tree4" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="Pineapple" Type="FruitNode" Tag="10111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Pineapple-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="FlowerGreen" Type="FruitNode" Tag="11111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="FlowerGreen-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Watermelon" Type="FruitNode" Tag="12111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Watermelon-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+            </TreeSystem>
+            <StaticSprites>
+            </StaticSprites>
+            <Actors>
+                <Actor Desc="Tractor" Type="TractorNode" Tag="59112" Z="13" FramesFileName="Tractor.plist" ImageFormat="pvr.ccz" VerticesFile="TractorVertices.plist" FrameName="Tractor" AnchorPoint="{0,0}" Position="{27, 1.5}" PositionFromTop="false" CollisionType="CollisionTypeTruck" MakeDynamic="true" MakeKinematic="false">
+                    <Joint With="Ground" Type="Prismatic" WorldAxis="{1,0}"/>
+                    <CollidesWith Value="CollisionTypeFruit"/>
+                    <CollidesWith Value="CollisionTypeHail"/>
+                    <MaskBits Value="CollisionTypeALL"/>
+                    <MaskBits Value="~CollisionTypeTruck"/>
+                    <MaskBits Value="~CollisionTypeTruckDriver"/>
+                </Actor>
+            </Actors>
+        </Group>
+        
+        <!-- Group 2 -->
+        <Group Number="2" Active="1" Label="10-18" ReqScoreToEnable="45000" ReqStarsToEnable="24" GameLayer="TargetLayerGameLayer1" SkyRegion="{{0,30.5},{60.125,9.5}}" UnitsFromEdge="0" UnitsYOffset="5" TimeBeforeHail="600" NumberOfTrailers="1">
+            <Images UIBackground="UIBackground"/>
+            <Parallax Active="true" FramesFileName="Parallax2.plist" ImageFormat="pvr.ccz" TextureImage="Parallax2.pvr.ccz">
+                <Sprite Tag="100" Z="-1400" FrameName="Sky" SpeedFactor="0.0" AnchorPoint="{0,1}" Position="{0,0}" PositionFromTop="true"/>
+                <Sprite Tag="100" Z="-1300" FrameName="Clouds" SpeedFactor="0.1" AnchorPoint="{0,1}" Position="{0,4}" PositionFromTop="true"/>
+                <Sprite Tag="101" Z="-1200" FrameName="Mountains" SpeedFactor="0.3" AnchorPoint="{0,1}" Position="{0,15}" PositionFromTop="true"/>
+                <Sprite Tag="102" Z="-1100" FrameName="Hills" SpeedFactor="0.6" AnchorPoint="{0,0}" Position="{0,-2.5}" PositionFromTop="false"/>
+            </Parallax>
+            <EnemySystem FramesFileName="BugAnimation.plist" ImageFormat="pvr.ccz" Active="true" EmissionDelay="8" EmissionRate="1" EmissionInterval="1.5" EmissionStopAfter="18" EnemySpeed="1.5" PositionXVariation="3.0" PositionYVariation="3.5">
+                <Actors>
+                    <Actor Desc="BugAnimation" Type="BugAnimationNode" Tag="7778" Z="105" FramesFileName="" ImageFormat="" VerticesFile="" FrameName="BugAnimation0" AnchorPoint="{0.5,0.5}" Position="{2,20}" PositionFromTop="false" CollisionType="CollisionTypeEnemy" MakeDynamic="false">
+                        <CollidesWith Value="CollisionTypeFruit"/>
+                        <MaskBits Value="CollisionTypeALL"/>
+                        <MaskBits Value="~CollisionTypeWorldLeft"/>
+                        <MaskBits Value="~CollisionTypeWorldRight"/>
+                        <MaskBits Value="~CollisionTypeTruck"/>
+                        <MaskBits Value="~CollisionTypeTruckDriver"/>
+                    </Actor>
+                </Actors>
+            </EnemySystem>
+            <TreeSystem Active="true" Speed="2.0" FramesFileName="Trees5_8.plist" ImageFormat="pvr.ccz" TextureImage="Trees5_8.pvr.ccz">
+                <Tree Tag="1" Z="10" AnchorPoint="{0,0}" FrameName="Tree5" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="FlowerGreen" Type="FruitNode" Tag="1111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="FlowerGreen-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Pineapple" Type="FruitNode" Tag="2111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Pineapple-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Banana" Type="FruitNode" Tag="3111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Banana-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+                <Tree Tag="2" Z="11" AnchorPoint="{0,0}" FrameName="Tree6" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="GrapeGreen" Type="FruitNode" Tag="4111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="GrapeGreen-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Kiwi" Type="FruitNode" Tag="5111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Kiwi-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Melon" Type="FruitNode" Tag="6111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Melon-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        
+                        <!-- Non Fruit element: never in goal -->                        
+                        <Actor Desc="LadyBugSide" Type="FruitNode" Tag="16111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="LadyBugSide-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeZERO" MakeDynamic="false">
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+                <Tree Tag="3" Z="12" AnchorPoint="{0,0}" FrameName="Tree7" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="AppleRed" Type="FruitNode" Tag="7111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="AppleRed-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="AppleGreen" Type="FruitNode" Tag="8111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="AppleGreen-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Watermelon" Type="FruitNode" Tag="9111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Watermelon-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+                <Tree Tag="4" Z="13" AnchorPoint="{0,0}" FrameName="Tree8" FruitRegion="{{2,22},{20,15}}">
+                    <Actors>
+                        <Actor Desc="Raspberry" Type="FruitNode" Tag="10111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Raspberry-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="Strawberry" Type="FruitNode" Tag="11111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="Strawberry-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                        <Actor Desc="OrangeHalf" Type="FruitNode" Tag="12111" Z="102" FramesFileName="Fruit32.plist" ImageFormat="pvr.ccz" VerticesFile="Fruit32Vertices.plist" FrameName="OrangeHalf-32" AnchorPoint="{0,0}" Position="{0,0}" PositionFromTop="false" CollisionType="CollisionTypeFruit" MakeDynamic="false">
+                            <CollidesWith Value="CollisionTypeHail"/>
+                            <CollidesWith Value="CollisionTypeObstacleHCart"/>
+                            <MaskBits Value="CollisionTypeALL"/>
+                            <MaskBits Value="~CollisionTypeWorldLeft"/>
+                            <MaskBits Value="~CollisionTypeWorldRight"/>
+                        </Actor>
+                    </Actors>
+                </Tree>
+            </TreeSystem>
+            <StaticSprites>
+                <!--StaticSprite Tag="2222" Z="-1" FramesFileName="Trees5_6.plist" ImageFormat="png" FrameName="Tree6" AnchorPoint="{0,0}" Position="{2,0}" PositionFromTop="false"/-->
+            </StaticSprites>
+            <Actors>
+                <Actor Desc="Tractor" Type="TractorNode" Tag="59112" Z="13" FramesFileName="Tractor.plist" ImageFormat="pvr.ccz" VerticesFile="TractorVertices.plist" FrameName="Tractor" AnchorPoint="{0,0}" Position="{27, 1.5}" PositionFromTop="false" CollisionType="CollisionTypeTruck" MakeDynamic="true" MakeKinematic="false">
+                    <Joint With="Ground" Type="Prismatic" WorldAxis="{1,0}"/>
+                    <CollidesWith Value="CollisionTypeFruit"/>
+                    <CollidesWith Value="CollisionTypeHail"/>
+                    <MaskBits Value="CollisionTypeALL"/>
+                    <!--MaskBits Value="~CollisionTypeWorldRight"/-->
+                    <MaskBits Value="~CollisionTypeTruck"/>
+                    <MaskBits Value="~CollisionTypeTruckDriver"/>
+                </Actor>
+            </Actors>
+        </Group>
+        
+    </Groups>
+	<Levels>
+        
+		<!-- group 1 -->
+        <Level GroupNumber="1" Number="1" ReqScoreToEnable="0" ReqStarsToEnable="0">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0" TimesFailed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Banana-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Raspberry-32" Target="1" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="1" Number="2" ReqScoreToEnable="5000" ReqStarsToEnable="3">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Watermelon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Kiwi-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+		<Level GroupNumber="1" Number="3" ReqScoreToEnable="10000" ReqStarsToEnable="6">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Pineapple-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="AppleGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Melon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Raspberry-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+        <Level GroupNumber="1" Number="4" ReqScoreToEnable="15000" ReqStarsToEnable="9">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0" TimesFailed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Banana-32" Target="2" Count="0"/>
+                <LevelGoal Tag="2" FruitName="GrapeGreen-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+		<Level GroupNumber="1" Number="5" ReqScoreToEnable="20000" ReqStarsToEnable="12">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="GrapeGreen-32" Target="2" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Melon-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+		<Level GroupNumber="1" Number="6" ReqScoreToEnable="25000" ReqStarsToEnable="15">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Kiwi-32" Target="3" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Watermelon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="FlowerGreen-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+        <Level GroupNumber="1" Number="7" ReqScoreToEnable="30000" ReqStarsToEnable="18">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0" TimesFailed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="FlowerRed-32" Target="3" Count="0"/>
+                <LevelGoal Tag="2" FruitName="OrangeHalf-32" Target="2" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Pineapple-32" Target="1" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Watermelon-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+		<Level GroupNumber="1" Number="8" ReqScoreToEnable="35000" ReqStarsToEnable="21">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Strawberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Pineapple-32" Target="3" Count="0"/>
+                <LevelGoal Tag="3" FruitName="GrapeGreen-32" Target="2" Count="0"/>
+            </LevelGoals>
+		</Level>
+		<Level GroupNumber="1" Number="9" ReqScoreToEnable="40000" ReqStarsToEnable="24">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Melon-32" Target="3" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Watermelon-32" Target="2" Count="0"/>
+                <LevelGoal Tag="3" FruitName="FlowerGreen-32" Target="4" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Strawberry-32" Target="2" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Pineapple-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+        
+        <!-- group 2 -->
+        <Level GroupNumber="2" Number="10" ReqScoreToEnable="45000" ReqStarsToEnable="24">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Banana-32" Target="2" Count="0"/>
+                <LevelGoal Tag="3" FruitName="GrapeGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Kiwi-32" Target="2" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Strawberry-32" Target="2" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="2" Number="11" ReqScoreToEnable="50000" ReqStarsToEnable="26">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="FlowerGreen-32" Target="2" Count="0"/>
+                <LevelGoal Tag="2" FruitName="AppleRed-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Pineapple-32" Target="2" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Banana-32" Target="2" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Watermelon-32" Target="1" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="2" Number="12" ReqScoreToEnable="55000" ReqStarsToEnable="29">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Watermelon-32" Target="2" Count="0"/>
+                <LevelGoal Tag="2" FruitName="FlowerGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="OrangeHalf-32" Target="3" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Kiwi-32" Target="3" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Strawberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="6" FruitName="Banana-32" Target="2" Count="0"/>
+            </LevelGoals>
+		</Level>
+        <Level GroupNumber="2" Number="13" ReqScoreToEnable="60000" ReqStarsToEnable="32">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Banana-32" Target="2" Count="0"/>
+                <LevelGoal Tag="3" FruitName="AppleRed-32" Target="3" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Kiwi-32" Target="1" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Strawberry-32" Target="3" Count="0"/>
+                <LevelGoal Tag="6" FruitName="Pineapple-32" Target="2" Count="0"/>
+                <LevelGoal Tag="7" FruitName="Melon-32" Target="2" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="2" Number="14" ReqScoreToEnable="65000" ReqStarsToEnable="34">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="AppleGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Melon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Pineapple-32" Target="2" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Kiwi-32" Target="2" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Strawberry-32" Target="3" Count="0"/>
+                <LevelGoal Tag="6" FruitName="GrapeGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="7" FruitName="Banana-32" Target="2" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="2" Number="15" ReqScoreToEnable="70000" ReqStarsToEnable="37">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Melon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Raspberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="Banana-32" Target="1" Count="0"/>
+                <LevelGoal Tag="4" FruitName="AppleRed-32" Target="2" Count="0"/>
+                <LevelGoal Tag="5" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="6" FruitName="Kiwi-32" Target="1" Count="0"/>
+                <LevelGoal Tag="7" FruitName="Strawberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="8" FruitName="Pineapple-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+        <Level GroupNumber="2" Number="16" ReqScoreToEnable="75000" ReqStarsToEnable="40">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Watermelon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="2" FruitName="FlowerGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Raspberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Melon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="6" FruitName="Banana-32" Target="1" Count="0"/>
+                <LevelGoal Tag="7" FruitName="AppleRed-32" Target="1" Count="0"/>
+                <LevelGoal Tag="8" FruitName="Pineapple-32" Target="1" Count="0"/>
+                <LevelGoal Tag="9" FruitName="GrapeGreen-32" Target="1" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="2" Number="17" ReqScoreToEnable="80000" ReqStarsToEnable="42">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Banana-32" Target="2" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Watermelon-32" Target="1" Count="0"/>
+                <LevelGoal Tag="3" FruitName="AppleRed-32" Target="1" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Pineapple-32" Target="2" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Strawberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="6" FruitName="GrapeGreen-32" Target="1" Count="0"/>
+                <LevelGoal Tag="7" FruitName="OrangeHalf-32" Target="1" Count="0"/>
+                <LevelGoal Tag="8" FruitName="Kiwi-32" Target="2" Count="0"/>
+                <LevelGoal Tag="9" FruitName="Melon-32" Target="1" Count="0"/>
+            </LevelGoals> 
+		</Level>
+		<Level GroupNumber="2" Number="18" ReqScoreToEnable="85000" ReqStarsToEnable="45">
+            <LevelScores Score="0" Bonus="0" StarScore="0" Time="0.0" PrevScore="0" PrevBonus="0" PrevStarScore="0" PrevTime="0.0" TimesPlayed="0" TimesPassed="0"/>
+            <LevelGoals>
+                <LevelGoal Tag="1" FruitName="Kiwi-32" Target="3" Count="0"/>
+                <LevelGoal Tag="2" FruitName="Watermelon-32" Target="2" Count="0"/>
+                <LevelGoal Tag="3" FruitName="OrangeHalf-32" Target="3" Count="0"/>
+                <LevelGoal Tag="4" FruitName="Banana-32" Target="3" Count="0"/>
+                <LevelGoal Tag="5" FruitName="Strawberry-32" Target="2" Count="0"/>
+                <LevelGoal Tag="6" FruitName="Pineapple-32" Target="3" Count="0"/>
+                <LevelGoal Tag="7" FruitName="Raspberry-32" Target="1" Count="0"/>
+                <LevelGoal Tag="8" FruitName="Melon-32" Target="2" Count="0"/>
+                <LevelGoal Tag="9" FruitName="AppleRed-32" Target="1" Count="0"/>
+            </LevelGoals>
+		</Level>
+
+	</Levels>
+</GameState>
