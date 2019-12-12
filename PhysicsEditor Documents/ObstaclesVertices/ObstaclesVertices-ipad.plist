@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!-- created with http://www.physicseditor.de -->
+
+<plist version="1.0">
+	<dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>ptm_ratio</key>
+            <real>64</real>
+        </dict>
+        <key>bodies</key>
+		<dict>
+
+			<key>ObstacleWall-ipad</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>2</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ 50.500,1.000 }</string>
+	
+								<string>{ 50.500,221.000 }</string>
+	
+								<string>{ 1.000,222.500 }</string>
+	
+								<string>{ 0.000,0.500 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>ObstacleCart-ipad</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>2</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ 101.917,16.950 }</string>
+	
+								<string>{ 0.083,16.950 }</string>
+	
+								<string>{ 0.083,0.133 }</string>
+	
+								<string>{ 101.867,0.083 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>ObstacleCart2-ipad</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>2</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ 101.917,20.766 }</string>
+	
+								<string>{ 86.234,21.500 }</string>
+	
+								<string>{ 86.494,10.778 }</string>
+	
+								<string>{ 101.867,-0.101 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 15.178,21.450 }</string>
+	
+								<string>{ 0.266,20.950 }</string>
+	
+								<string>{ 0.266,-0.050 }</string>
+	
+								<string>{ 15.500,10.778 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 101.867,-0.101 }</string>
+	
+								<string>{ 86.494,10.778 }</string>
+	
+								<string>{ 15.500,10.778 }</string>
+	
+								<string>{ 0.266,-0.050 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>ObstacleRotating4-ipad</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>2</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ -0.139,59.444 }</string>
+	
+								<string>{ 0.000,42.500 }</string>
+	
+								<string>{ 12.834,42.861 }</string>
+	
+								<string>{ 13.639,59.417 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 58.829,-0.332 }</string>
+	
+								<string>{ 59.332,12.413 }</string>
+	
+								<string>{ 42.190,12.365 }</string>
+	
+								<string>{ 42.944,0.282 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 43.000,102.500 }</string>
+	
+								<string>{ 42.583,89.722 }</string>
+	
+								<string>{ 59.139,90.888 }</string>
+	
+								<string>{ 58.722,102.500 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 101.805,42.861 }</string>
+	
+								<string>{ 101.861,59.527 }</string>
+	
+								<string>{ 89.083,59.417 }</string>
+	
+								<string>{ 88.749,42.805 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 59.139,90.888 }</string>
+	
+								<string>{ 42.583,89.722 }</string>
+	
+								<string>{ 13.639,59.417 }</string>
+	
+								<string>{ 12.834,42.861 }</string>
+	
+								<string>{ 59.332,12.413 }</string>
+	
+								<string>{ 88.749,42.805 }</string>
+	
+								<string>{ 89.083,59.417 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 42.190,12.365 }</string>
+	
+								<string>{ 59.332,12.413 }</string>
+	
+								<string>{ 12.834,42.861 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>ObstacleBar-ipad</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>2</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ -0.003,0.032 }</string>
+	
+								<string>{ 341.169,0.060 }</string>
+	
+								<string>{ 341.140,20.965 }</string>
+	
+								<string>{ 0.064,20.965 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+		</dict>
+	</dict>
+</plist>
+

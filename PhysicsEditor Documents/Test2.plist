@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!-- created with http://www.physicseditor.de -->
+
+<plist version="1.0">
+	<dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+            <key>ptm_ratio</key>
+            <real>32</real>
+        </dict>
+        <key>bodies</key>
+		<dict>
+
+			<key>Mountains</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.0000,0.0000 }</string>
+				<key>fixtures</key>
+				<array>
+
+					<dict>
+						<key>density</key>
+						<real>2</real>
+						<key>friction</key>
+						<real>0</real>
+                        <key>restitution</key>
+                        <real>0</real>
+						<key>filter_categoryBits</key>
+						<integer>1</integer>
+						<key>filter_groupIndex</key>
+						<integer>0</integer>
+						<key>filter_maskBits</key>
+						<integer>65535</integer>
+						<key>fixture_type</key>
+                        <string>POLYGON</string>
+                        <key>isSensor</key>
+
+						<false/>
+
+						<key>polygons</key>
+						<array>
+
+							<array>
+	
+								<string>{ 0.500,62.000 }</string>
+	
+								<string>{ -0.500,2.000 }</string>
+	
+								<string>{ 479.500,1.000 }</string>
+	
+								<string>{ 200.000,70.500 }</string>
+	
+								<string>{ 80.000,88.500 }</string>
+	
+								<string>{ 56.000,88.500 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 478.500,83.000 }</string>
+	
+								<string>{ 427.500,125.000 }</string>
+	
+								<string>{ 406.000,132.500 }</string>
+	
+								<string>{ 383.500,119.000 }</string>
+	
+								<string>{ 318.000,67.500 }</string>
+	
+								<string>{ 479.500,1.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 265.000,104.500 }</string>
+	
+								<string>{ 245.000,96.500 }</string>
+	
+								<string>{ 200.000,70.500 }</string>
+	
+								<string>{ 318.000,67.500 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 414.000,132.500 }</string>
+	
+								<string>{ 406.000,132.500 }</string>
+	
+								<string>{ 427.500,125.000 }</string>
+
+							</array>
+
+							<array>
+	
+								<string>{ 318.000,67.500 }</string>
+	
+								<string>{ 200.000,70.500 }</string>
+	
+								<string>{ 479.500,1.000 }</string>
+
+							</array>
+
+						</array>
+					</dict>
+
+				</array>
+			</dict>
+
+		</dict>
+	</dict>
+</plist>
+

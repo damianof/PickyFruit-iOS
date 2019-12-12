@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>LightiningAnimA0.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{201, 62}, {26, 26}}</string>
+			<key>offset</key>
+			<string>{-19, 18}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {26, 26}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{164, 62}, {36, 34}}</string>
+			<key>offset</key>
+			<string>{-14, 14}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {36, 34}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{119, 62}, {44, 44}}</string>
+			<key>offset</key>
+			<string>{-10, 9}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {44, 44}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{64, 62}, {54, 52}}</string>
+			<key>offset</key>
+			<string>{-5, 5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {54, 52}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {62, 60}}</string>
+			<key>offset</key>
+			<string>{-1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {62, 60}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{64, 1}, {62, 60}}</string>
+			<key>offset</key>
+			<string>{1, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{3, 3}, {62, 60}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA6.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{127, 1}, {62, 60}}</string>
+			<key>offset</key>
+			<string>{-1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {62, 60}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA7.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{190, 1}, {62, 60}}</string>
+			<key>offset</key>
+			<string>{1, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{3, 3}, {62, 60}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict><key>LightiningAnimA8.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 62}, {62, 60}}</string>
+			<key>offset</key>
+			<string>{-1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 1}, {62, 60}}</string>
+			<key>sourceSize</key>
+			<string>{66, 64}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<string>2</string>
+		<key>size</key>
+		<string>{256, 128}</string>
+		<key>textureFileName</key>
+		<string>LightiningAnimA-hd.png</string>
+	</dict>
+</dict>
+</plist>
