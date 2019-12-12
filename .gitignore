@@ -23,3 +23,4 @@ yarn-error.log*
 
 # Texture packer specific:
 *.pvr.*bak
+*-copy.*
